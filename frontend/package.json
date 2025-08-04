@@ -1,18 +1,18 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "device-sensor-monitor-frontend",
+  "version": "1.0.0",
   "private": true,
+  "description": "Frontend dashboard for Device Sensor Monitor - Android device data collection and monitoring",
   "dependencies": {
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.6.4",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.11.0",
-    "chart.js": "^4.5.0",
-    "react": "^19.1.1",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^19.1.1",
-    "react-router-dom": "^7.7.1",
+    "axios": "^1.6.0",
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +20,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:dev": "REACT_APP_ENV=development npm start",
+    "start:prod": "REACT_APP_ENV=production npm start",
+    "build:dev": "REACT_APP_ENV=development npm run build",
+    "build:prod": "REACT_APP_ENV=production npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +43,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@types/react-router-dom": "^5.3.3",
+    "typescript": "^5.9.2"
   }
 }
