@@ -1,0 +1,21 @@
+﻿{
+    "version":  "1.0.0",
+    "license":  "Apache-2.0",
+    "keywords":  [
+                     "android",
+                     "sensor",
+                     "monitoring",
+                     "iot",
+                     "device"
+                 ],
+    "scripts":  {
+                    "start:dev":  "set NODE_ENV=development npm start",
+                    "dev":  "nodemon server.js",
+                    "start:prod":  "set NODE_ENV=production npm start",
+                    "start":  "node server.js"
+                },
+    "name":  "device-sensor-monitor-backend",
+    "description":  "Backend API for Device Sensor Monitor - Android device data collection and monitoring",
+    "author":  "Your Name",
+    "main":  "server.js"
+}
